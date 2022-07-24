@@ -8,11 +8,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.function.Supplier;
 
 public class ManagerItem {
 
-    public static final HashMap<String, RegistryObject<Item>> ITEMS = new HashMap<>();
+    public static final Map<String, RegistryObject<Item>> ITEMS = new HashMap<>();
     private static final DeferredRegister<Item> ITEM_REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, PVZReborn.MOD_ID);
 
     /**
@@ -38,6 +39,10 @@ public class ManagerItem {
      */
     public static void registryItem(String name, Supplier<? extends Item> sup) {
         ITEMS.put(name, ITEM_REGISTER.register(name, sup));
+    }
+
+    public static Item getItem(String name) {
+        return ITEMS.get(name).get();
     }
 
 }
