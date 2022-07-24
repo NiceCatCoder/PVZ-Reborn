@@ -1,3 +1,17 @@
 {
-  "item.pvzreborn.overloaded_redstone": "过载红石粉"
+  "itemGroup.pvzreborn": "PVZ:重生",
+  "item.pvzreborn.dark_rider_sword": "暗黑骑士之剑",
+  "item.pvzreborn.uncontrollable_nether_star": "不可控下界之星",
+  "item.pvzreborn.supercritical_fire": "超临界火",
+  "item.pvzreborn.eighteenth_state_ice": "第十八代冰",
+  "item.pvzreborn.ancient_eye": "古代之眼",
+  "item.pvzreborn.overloaded_redstone": "过载红石粉",
+  "item.pvzreborn.redstone_arm": "红石大臂",
+  "item.pvzreborn.bedrock_dust": "基岩粉",
+  "item.pvzreborn.huge_pea": "巨大豌豆",
+  "item.pvzreborn.creeper_gland": "苦力怕腺体",
+  "item.pvzreborn.sharp_ender_crystal_fragment": "锐利末影水晶碎片",
+  "item.pvzreborn.entity_light": "实体光",
+  "item.pvzreborn.iron_golem_sculpture_fragment": "铁傀儡雕像碎片",
+  "item.pvzreborn.compact_thallium_sulfate": "压缩硫酸铊"
 }
