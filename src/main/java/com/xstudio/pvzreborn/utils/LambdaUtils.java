@@ -17,8 +17,7 @@ public class LambdaUtils {
      */
     public static RuntimeException reportException(Throwable t) {
         LOGGER.error(t);
-        System.exit(-1);
         return new RuntimeException("Exception in Lambda", t);
     }
-    
+
 }
