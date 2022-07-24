@@ -9,11 +9,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class PVZReborn {
     public static final String MOD_ID = "pvzreborn";
 
-    public PVZReborn() throws Exception {
+    public PVZReborn() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         ManagerItem.init(bus);
 //        ManagerBlock.init(bus);
 //        ManagerEntity.init(bus);
     }
-    
+
 }
