@@ -1,0 +1,15 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/wither"
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "dimension": "minecraft:the_nether"
+      }
+    }
+  ],
+  "type": "pvzreborn:wither_loot_modifier"
+}
