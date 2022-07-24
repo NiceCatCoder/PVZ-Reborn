@@ -3,9 +3,9 @@ package com.xstudio.pvzreborn.item;
 import com.xstudio.pvzreborn.group.PVZRebornTab;
 import net.minecraft.world.item.Item;
 
-public abstract class CommonItem extends Item {
+public abstract class ItemBase extends Item {
 
-    public CommonItem() {
+    public ItemBase() {
         super(new Properties().tab(PVZRebornTab.getInstance()));
     }
 
