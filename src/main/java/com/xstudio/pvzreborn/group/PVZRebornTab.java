@@ -18,7 +18,7 @@ public class PVZRebornTab extends CreativeModeTab {
 
     @Override
     public ItemStack makeIcon() {
-        return new ItemStack(ManagerItem.ITEMS.get("overloaded_redstone").get());
+        return new ItemStack(ManagerItem.ITEMS.get("huge_pea").get());
     }
 
 }

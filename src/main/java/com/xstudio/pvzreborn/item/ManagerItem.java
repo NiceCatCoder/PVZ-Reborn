@@ -23,9 +23,9 @@ public class ManagerItem {
         //以下注册物品
 
         String[] commonItemList = {
-            "dark_rider_sword", "uncontrollable_nether_star", "supercritical_fire", "eighteenth_state_ice", "ancient_eye",
-            "overloaded_redstone", "redstone_arm", "bedrock_dust", "huge_pea", "creeper_gland", "sharp_ender_crystal_fragment",
-            "entity_light", "iron_golem_sculpture_fragment", "compact_thallium_sulfate"
+                "dark_knight_sword", "uncontrollable_nether_star", "supercritical_fire", "eighteenth_state_ice", "ancient_eye",
+                "overloaded_redstone", "redstone_arm", "bedrock_dust", "huge_pea", "creeper_gland", "sharp_ender_crystal_fragment",
+                "entity_light", "iron_golem_sculpture_fragment", "compact_thallium_sulfate"
         };
         for (String name : commonItemList) {
             registryItem(name, () -> new CommonItem() {

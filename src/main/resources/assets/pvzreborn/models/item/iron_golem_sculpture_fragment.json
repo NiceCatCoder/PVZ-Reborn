@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pvzreborn:item/family/iron_golem_sculpture_fragment"
+  }
+}

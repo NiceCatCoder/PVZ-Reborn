@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pvzreborn:item/family/ancient_eye"
+  }
+}
