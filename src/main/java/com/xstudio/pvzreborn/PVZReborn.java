@@ -1,8 +1,6 @@
 package com.xstudio.pvzreborn;
 
-import com.xstudio.pvzreborn.block.BlockManager;
-import com.xstudio.pvzreborn.entity.EntityManager;
-import com.xstudio.pvzreborn.item.ItemManager;
+import com.xstudio.pvzreborn.item.ManagerItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -11,10 +9,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 public class PVZReborn {
     public static final String MOD_ID = "pvzreborn";
 
-    public PVZReborn() {
+    public PVZReborn() throws Exception {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        ItemManager.init(bus);
-        BlockManager.init(bus);
-        EntityManager.init(bus);
+        ManagerItem.init(bus);
+//        ManagerBlock.init(bus);
+//        ManagerEntity.init(bus);
     }
+    
 }
