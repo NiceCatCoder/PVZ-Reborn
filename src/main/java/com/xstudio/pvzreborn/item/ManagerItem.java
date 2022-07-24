@@ -1,7 +1,6 @@
 package com.xstudio.pvzreborn.item;
 
 import com.xstudio.pvzreborn.PVZReborn;
-import com.xstudio.pvzreborn.utils.Utils;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -23,7 +22,7 @@ public class ManagerItem {
         ITEM_REGISTER.register(bus);
         //以下注册物品
 
-        String[] commonItemList = {"overloaded_redstone"};
+        String[] commonItemList = {"dark_rider_sword", "uncontrollable_nether_star", "supercritical_fire", "eighteenth_state_ice", "ancient_eye", "overloaded_redstone", "redstone_arm", "bedrock_dust", "huge_pea", "creeper_gland", "sharp_ender_crystal_fragment", "entity_light", "iron_golem_sculpture_fragment", "compact_thallium"};
         for (String name : commonItemList) {
             registryItem(name, () -> new CommonItem() {
             });
@@ -34,7 +33,7 @@ public class ManagerItem {
      * @author Bread_NiceCat
      */
     public static void registryItem(String name, Supplier<? extends Item> sup) {
-        ITEMS.put(name, ITEM_REGISTER.register(Utils.prefixPoint(name), sup));
+        ITEMS.put(name, ITEM_REGISTER.register(name, sup));
     }
 
 }
