@@ -9,4 +9,8 @@ public class ItemBase extends Item {
         super(new Properties().tab(PVZRebornTab.getInstance()));
     }
 
+    public ItemBase(Properties properties) {
+        super(properties.tab(PVZRebornTab.getInstance()));
+    }
+
 }
