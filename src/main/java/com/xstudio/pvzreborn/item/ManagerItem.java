@@ -17,9 +17,9 @@ public class ManagerItem {
     public static final Map<String, RegistryObject<? extends Item>> ITEMS = new HashMap<>();
     private static final DeferredRegister<Item> ITEM_REGISTER = DeferredRegister.create(ForgeRegistries.ITEMS, PVZReborn.MOD_ID);
     private static final String[] commonItemList = {
-        "dark_knight_sword", "uncontrollable_nether_star", "supercritical_fire", "eighteenth_state_ice", "ancient_eye",
-        "overloaded_redstone", "redstone_arm", "huge_pea", "bedrock_dust", "creeper_gland", "sharp_ender_crystal_fragment",
-        "entity_light", "iron_golem_sculpture_fragment", "compact_thallium_sulfate"
+            "dark_knight_sword", "uncontrollable_nether_star", "supercritical_fire", "eighteenth_state_ice", "ancient_eye",
+            "overloaded_redstone", "redstone_arm", "huge_pea", "bedrock_dust", "creeper_gland", "sharp_ender_crystal_fragment",
+            "entity_light", "iron_golem_sculpture_fragment", "compact_thallium_sulfate", "empty_test_tube"
     };
 
     /**
@@ -29,6 +29,7 @@ public class ManagerItem {
         // Registering item
         ITEM_REGISTER.register(bus);
         Arrays.stream(commonItemList).forEach(name -> registryItem(name, ItemBase::new));
+        ITEM_REGISTER.register(ItemTestTube.NAME, ItemTestTube::new);
     }
 
     /**

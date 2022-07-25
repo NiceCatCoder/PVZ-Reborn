@@ -24,3 +24,4 @@ run
 # Files from Forge MDK
 
 src/generated/resources/.cache/cache
+/.shelf/

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pvzreborn:item/test_tube/empty_test_tube"
+  }
+}
