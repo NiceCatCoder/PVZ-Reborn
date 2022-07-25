@@ -5,6 +5,7 @@ import com.xstudio.pvzreborn.utils.Utils;
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.core.BlockPos;
+import net.minecraft.world.entity.monster.Creeper;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Explosion;
@@ -29,9 +30,16 @@ public class EventListener {
         Vec3 pos = explosion.getPosition();
         Level level = event.getWorld();
 
-        if (!level.isClientSide && level.getBlockState(new BlockPos(pos).below()).is(Blocks.BEDROCK)) {
-            Utils.createItemEntity(level, pos, new ItemStack(ManagerItem.getItem("bedrock_dust"), 2));
+        if (!level.isClientSide) {
+            if (explosion.getSourceMob() instanceof Creeper creeper && creeper.isIgnited()) {
+                Utils.createItemEntity(level, pos, new ItemStack(ManagerItem.getItem("creeper_gland")));
+            }
+
+            if (level.getBlockState(new BlockPos(pos).below()).is(Blocks.BEDROCK)) {
+                Utils.createItemEntity(level, pos, new ItemStack(ManagerItem.getItem("bedrock_dust"), 2));
+            }
         }
+
     }
 
     /**

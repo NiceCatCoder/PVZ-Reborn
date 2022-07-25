@@ -14,6 +14,8 @@ import java.util.List;
 
 public class WitherLootModifier extends LootModifier {
 
+    public static final String NAME = "wither_loot_modifier";
+
     public WitherLootModifier(LootItemCondition[] conditionsIn) {
         super(conditionsIn);
     }

@@ -19,7 +19,7 @@ public class ManagerLootModifier {
 
     public static void init(IEventBus bus) {
         GLM.register(bus);
-        registerModifier("wither_loot_modifier", WitherLootModifier.Serializer::new);
+        registerModifier(WitherLootModifier.NAME, WitherLootModifier.Serializer::new);
     }
 
     private static void registerModifier(String name, Supplier<? extends GlobalLootModifierSerializer<?>> supplier) {

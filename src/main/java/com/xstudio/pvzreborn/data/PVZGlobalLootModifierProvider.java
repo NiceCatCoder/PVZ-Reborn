@@ -21,7 +21,7 @@ public class PVZGlobalLootModifierProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-        add("wither_loot_modifier", new WitherLootModifier(
+        add(WitherLootModifier.NAME, new WitherLootModifier(
             new LootItemCondition[]{
                     LootTableIdCondition.builder(new ResourceLocation("entities/wither")).build(),
                     LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(Level.NETHER)).build()

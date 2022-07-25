@@ -38,6 +38,7 @@ minecraft {
         client {
             workingDirectory project.file('run')
 
+            arg '--username=dev_player'
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'info'
             property 'forge.enabledGameTestNamespaces', 'pvzreborn'
@@ -52,6 +53,7 @@ minecraft {
         server {
             workingDirectory project.file('run')
 
+            arg '--username=dev_player'
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'info'
             property 'forge.enabledGameTestNamespaces', 'pvzreborn'
